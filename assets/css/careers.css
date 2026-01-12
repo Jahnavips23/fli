@@ -1,0 +1,298 @@
+/* Careers Page Styles */
+
+/* Page Header */
+.page-header {
+    padding: 60px 0;
+    background-color: var(--primary);
+    position: relative;
+}
+
+.page-header .breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.page-header .breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.page-header .breadcrumb-item.active {
+    color: #fff;
+}
+
+.page-header .breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Section Titles */
+.section-title .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.title-border {
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.text-center .title-border {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Careers Intro Section */
+.careers-intro {
+    padding: 80px 0;
+}
+
+.careers-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Jobs Section */
+.featured-jobs {
+    padding: 80px 0;
+}
+
+.job-card {
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffc107;
+    color: #212529;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.job-title {
+    font-weight: 600;
+    color: #333;
+}
+
+.job-meta {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.job-excerpt {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Why Work With Us Section */
+.why-work-section {
+    padding: 80px 0;
+}
+
+.benefit-card {
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.benefit-icon {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-icon i {
+    color: var(--primary);
+}
+
+/* Current Openings Section */
+.current-openings {
+    padding: 80px 0;
+}
+
+.job-filters {
+    margin-bottom: 30px;
+}
+
+.department-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.job-list-card {
+    transition: all 0.3s ease;
+}
+
+.job-list-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Employee Testimonials Section */
+.employee-testimonials {
+    padding: 80px 0;
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.testimonial-author-image {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.testimonial-author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Application Process Section */
+.application-process {
+    padding: 80px 0;
+}
+
+.process-step {
+    position: relative;
+}
+
+.process-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+}
+
+.step-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+/* Job Details Page */
+.job-details-section {
+    padding: 80px 0;
+}
+
+.job-header {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 20px;
+}
+
+.job-meta span {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.job-description h3,
+.job-responsibilities h3,
+.job-requirements h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sidebar-widget {
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.related-job-item h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.related-job-item h5 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.related-job-item h5 a:hover {
+    color: var(--primary);
+}
+
+/* Application Form Section */
+.application-form-section {
+    padding: 80px 0;
+}
+
+.application-form-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .careers-intro,
+    .featured-jobs,
+    .why-work-section,
+    .current-openings,
+    .employee-testimonials,
+    .application-process,
+    .job-details-section,
+    .application-form-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .careers-intro,
+    .featured-jobs,
+    .why-work-section,
+    .current-openings,
+    .employee-testimonials,
+    .application-process,
+    .job-details-section,
+    .application-form-section {
+        padding: 40px 0;
+    }
+    
+    .job-meta span {
+        display: block;
+        margin-right: 0 !important;
+    }
+}

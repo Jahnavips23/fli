@@ -1,0 +1,166 @@
+/* Downloads Page Styles */
+
+/* Page Header */
+.page-header {
+    padding: 60px 0;
+    background-color: var(--primary);
+    position: relative;
+}
+
+.page-header .breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.page-header .breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.page-header .breadcrumb-item.active {
+    color: #fff;
+}
+
+.page-header .breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.title-border {
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.text-center .title-border {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Download Cards */
+.download-card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.download-card .card-header {
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.download-card .card-body {
+    padding: 20px;
+}
+
+.download-card .card-footer {
+    border-top: none;
+    padding: 15px 20px;
+}
+
+.download-meta {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Platform Tabs */
+#downloadTabs .nav-link {
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-weight: 500;
+    color: #495057;
+    transition: all 0.3s ease;
+}
+
+#downloadTabs .nav-link:hover {
+    background-color: #f8f9fa;
+}
+
+#downloadTabs .nav-link.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Instructions Section */
+.instruction-icon {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-instructions .card,
+.system-requirements .card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.download-instructions .card:hover,
+.system-requirements .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* System Requirements */
+.system-requirements .list-group-item {
+    border-left: none;
+    border-right: none;
+    padding: 12px 20px;
+}
+
+.system-requirements .list-group-item:first-child {
+    border-top: none;
+}
+
+.system-requirements .list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Support Section */
+.support-section {
+    background-color: #f8f9fa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    #downloadTabs .nav-link {
+        margin-bottom: 10px;
+    }
+    
+    .download-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-header {
+        padding: 40px 0;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    #downloadTabs {
+        flex-direction: column;
+    }
+    
+    #downloadTabs .nav-item {
+        margin-bottom: 10px;
+    }
+}

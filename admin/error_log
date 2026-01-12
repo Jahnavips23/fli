@@ -1,0 +1,8 @@
+[22-Aug-2025 11:34:53 UTC] Error getting count: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flionxga_frontend.users' doesn't exist
+[22-Aug-2025 11:34:53 UTC] Error getting count: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flionxga_frontend.blog_posts' doesn't exist
+[22-Aug-2025 11:34:53 UTC] Error getting count: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flionxga_frontend.downloads' doesn't exist
+[22-Aug-2025 11:34:53 UTC] Error getting count: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flionxga_frontend.newsletter_subscribers' doesn't exist
+[22-Aug-2025 11:34:53 UTC] Error getting recent items: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flionxga_frontend.blog_posts' doesn't exist
+[22-Aug-2025 11:34:53 UTC] Error getting recent items: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flionxga_frontend.newsletter_subscribers' doesn't exist
+[22-Aug-2025 11:35:03 UTC] Login error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flionxga_frontend.users' doesn't exist
+[18-Dec-2025 10:14:35 UTC] Login error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'SET'
