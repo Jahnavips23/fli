@@ -12,7 +12,7 @@
 
 .product-card .card-img-top {
     height: 200px;
-    object-fit: cover;
+    object-fit: contain !important;
     transition: all 0.5s ease;
 }
 
@@ -99,11 +99,11 @@
     .product-card .card-img-top {
         height: 180px;
     }
-    
+
     .service-card {
         padding: 20px;
     }
-    
+
     .service-icon {
         font-size: 2.5rem;
     }

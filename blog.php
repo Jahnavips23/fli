@@ -419,7 +419,7 @@ include 'includes/header.php';
 
 .blog-card .card-img-top {
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     transition: all 0.5s ease;
 }
 

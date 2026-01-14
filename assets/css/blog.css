@@ -14,7 +14,7 @@
 
 .blog-card .card-img-top {
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     transition: all 0.5s ease;
 }
 
@@ -35,7 +35,7 @@
 
 .blog-card-sm .card-img-top {
     height: 120px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* Blog Content */
@@ -50,7 +50,9 @@
     margin: 1.5rem 0;
 }
 
-.blog-content h2, .blog-content h3, .blog-content h4 {
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
@@ -59,7 +61,8 @@
     margin-bottom: 1.5rem;
 }
 
-.blog-content ul, .blog-content ol {
+.blog-content ul,
+.blog-content ol {
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
 }
