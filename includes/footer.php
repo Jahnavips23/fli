@@ -4,7 +4,7 @@
     <section class="newsletter-section py-5 bg-light">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-12">
                     <div class="card border-0 shadow">
                         <div class="card-body p-5">
                             <div class="row align-items-center">

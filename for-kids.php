@@ -628,7 +628,7 @@ include 'includes/header.php';
         
         <div class="row mt-5">
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
-                <div class="feature-box text-center">
+                <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
@@ -638,7 +638,7 @@ include 'includes/header.php';
             </div>
             
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-box text-center">
+                <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
                     </div>
@@ -648,7 +648,7 @@ include 'includes/header.php';
             </div>
             
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-box text-center">
+                <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
@@ -658,7 +658,7 @@ include 'includes/header.php';
             </div>
             
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-box text-center">
+                <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-puzzle-piece"></i>
                     </div>
@@ -668,7 +668,7 @@ include 'includes/header.php';
             </div>
             
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-box text-center">
+                <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-award"></i>
                     </div>
@@ -678,7 +678,7 @@ include 'includes/header.php';
             </div>
             
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-box text-center">
+                <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>

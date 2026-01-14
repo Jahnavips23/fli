@@ -16,8 +16,8 @@
 
 .program-card .card-img-top,
 .product-card .card-img-top {
-    height: auto;
-    width: 100%;
+    height: auto !important;
+    width: 100% !important;
     object-fit: contain !important;
     transition: all 0.5s ease;
 }
@@ -87,8 +87,33 @@
 
 .feature-icon {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #0d6efd;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto 25px auto !important;
+}
+
+.feature-box .feature-icon,
+.feature-box h4 {
+    text-align: center !important;
+    width: 100%;
+}
+
+.feature-box p {
+    text-align: justify !important;
+    text-align-last: left;
+    width: 100% !important;
+    display: block !important;
+    margin: 0 !important;
+
+}
+
+/* Additional specificity to ensure override */
+section .container .row .feature-box p {
+    text-align: justify !important;
+    text-align-last: left !important;
 }
 
 /* Gallery */

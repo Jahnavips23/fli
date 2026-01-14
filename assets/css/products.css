@@ -11,7 +11,8 @@
 }
 
 .product-card .card-img-top {
-    height: 200px;
+    height: auto !important;
+    width: 100% !important;
     object-fit: contain !important;
     transition: all 0.5s ease;
 }
@@ -97,7 +98,7 @@
 /* Responsive Adjustments */
 @media (max-width: 767.98px) {
     .product-card .card-img-top {
-        height: 180px;
+        height: auto;
     }
 
     .service-card {

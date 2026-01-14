@@ -94,6 +94,48 @@ $testimonials = get_testimonials();
     </div>
 </section>
 
+<!-- Our Team Section -->
+<section class="team-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="section-title mb-5">
+                    <h2 class="title">Our Team</h2>
+                    <div class="title-border mx-auto"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="team-card bg-white shadow-sm rounded">
+                    <div class="team-image">
+                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png" alt="Suchitha" class="img-fluid w-100">
+                    </div>
+                    <div class="team-info text-center p-4">
+                        <h4 class="mb-1">Suchitha</h4>
+                        <p class="text-primary mb-0">Team Lead</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="team-card bg-white shadow-sm rounded">
+                    <div class="team-image">
+                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person2.png" alt="Sumanth" class="img-fluid w-100">
+                    </div>
+                    <div class="team-info text-center p-4">
+                        <h4 class="mb-1">Sumanth</h4>
+                        <p class="text-primary mb-0">Flutter Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Vision & Mission Section -->
 <section class="vision-mission-section">
     <div class="container">

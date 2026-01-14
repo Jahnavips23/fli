@@ -21,7 +21,7 @@
     color: #fff;
 }
 
-.page-header .breadcrumb-item + .breadcrumb-item::before {
+.page-header .breadcrumb-item+.breadcrumb-item::before {
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -109,12 +109,14 @@
     padding: 80px 0;
 }
 
-.vision-box, .mission-box {
+.vision-box,
+.mission-box {
     height: 100%;
     transition: all 0.3s ease;
 }
 
-.vision-box:hover, .mission-box:hover {
+.vision-box:hover,
+.mission-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -262,6 +264,17 @@
     transform: translateY(-3px);
 }
 
+.team-info {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.team-info h4 {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
 /* Stats Section */
 .stats-section {
     padding: 80px 0;
@@ -305,11 +318,11 @@
         bottom: 20px;
         right: 20px;
     }
-    
+
     .experience-badge .years {
         font-size: 2rem;
     }
-    
+
     .experience-badge .text {
         font-size: 0.8rem;
     }
@@ -319,8 +332,8 @@
     .page-header {
         padding: 40px 0;
     }
-    
-    .about-section, 
+
+    .about-section,
     .vision-mission-section,
     .values-section,
     .testimonials-section,
@@ -329,18 +342,18 @@
     .cta-section {
         padding: 50px 0;
     }
-    
+
     .experience-badge {
         width: 80px;
         height: 80px;
         bottom: 10px;
         right: 10px;
     }
-    
+
     .experience-badge .years {
         font-size: 1.5rem;
     }
-    
+
     .experience-badge .text {
         font-size: 0.7rem;
     }
