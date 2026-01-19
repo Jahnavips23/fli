@@ -764,3 +764,46 @@ a:hover {
         flex: 0 0 65%;
     }
 }
+
+/* Home About Content Justification */
+.about-section .about-content p {
+    text-align: justify !important;
+    text-align-last: left !important;
+}
+
+/* Enhanced Contact Us Navbar Button */
+.btn-contact-cta {
+    background: linear-gradient(135deg, #0d6efd, #6610f2) !important;
+    /* Blue to Purple gradient */
+    border: none !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    /* Bold text */
+    padding: 12px 30px !important;
+    /* Increased padding */
+    border-radius: 50px !important;
+    /* Rounded shape */
+    transition: all 0.3s ease !important;
+    /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-contact-cta:hover {
+    transform: scale(1.05);
+    /* Slight scale up */
+    box-shadow: 0 0 20px rgba(102, 16, 242, 0.4) !important;
+    /* Soft outer glow */
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.btn-contact-cta:active {
+    transform: scale(0.98) !important;
+    /* Pressed effect */
+    box-shadow: none !important;
+}
+
+.btn-contact-cta:focus {
+    outline: 2px solid #fff;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.5) !important;
+}

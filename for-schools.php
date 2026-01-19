@@ -119,7 +119,7 @@ include 'includes/header.php';
 <section class="section-padding">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="col-lg-6 mb-4 mb-lg-0 school-intro-content" data-aos="fade-right">
                 <h2 class="section-title">Transforming Education Through Technology</h2>
                 <p>At Flione IT, we understand the unique challenges faced by educational institutions in today's rapidly evolving digital landscape. Our comprehensive suite of technology solutions is specifically designed to enhance teaching and learning experiences, streamline administrative processes, and create engaging educational environments.</p>
                 <p>Whether you're looking to equip your classrooms with the latest interactive technology, implement a robust school management system, or develop a customized digital learning platform, our team of education technology specialists is here to help you achieve your goals.</p>
@@ -533,11 +533,11 @@ include 'includes/header.php';
                 <div class="accordion" id="faqAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 What types of educational institutions do you work with?
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
                                 We work with a wide range of educational institutions, including K-12 schools, colleges, universities, and vocational training centers. Our solutions are customizable to meet the specific needs of different educational environments and age groups.
                             </div>

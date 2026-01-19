@@ -245,7 +245,7 @@ include 'includes/header.php';
 <section class="section-padding">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="col-lg-6 mb-4 mb-lg-0 kids-intro-content" data-aos="fade-right">
                 <h2 class="section-title">Inspiring the Next Generation of Innovators</h2>
                 <p>At Flione IT, we believe that technology education should be fun, engaging, and accessible to children of all ages. Our specially designed programs introduce kids to coding, robotics, digital art, and more in a supportive and creative environment.</p>
                 <p>Led by experienced instructors who are passionate about technology and education, our programs help children develop critical thinking, problem-solving skills, and digital literacy while fostering creativity and collaboration.</p>
@@ -626,7 +626,7 @@ include 'includes/header.php';
             </div>
         </div>
         
-        <div class="row mt-5">
+        <div class="row mt-5 kids-features">
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                 <div class="feature-box">
                     <div class="feature-icon">
@@ -991,11 +991,11 @@ $testimonials = get_testimonials(3);
                 <div class="accordion" id="faqAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 What age groups do your programs cater to?
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
                                 Our programs are designed for children between the ages of 7 and 14, with specific age ranges for each program. We carefully tailor the content and teaching methods to suit the developmental needs and abilities of each age group, ensuring that children are appropriately challenged and engaged.
                             </div>

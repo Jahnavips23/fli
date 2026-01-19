@@ -109,3 +109,9 @@
         font-size: 2.5rem;
     }
 }
+
+/* Schools Intro Justification */
+.school-intro-content p {
+    text-align: justify !important;
+    text-align-last: left !important;
+}

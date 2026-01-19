@@ -72,9 +72,9 @@ require_once 'includes/functions.php';
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/style.css">
-    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/products.css">
-    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/kids.css">
+    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/products.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/kids.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/blog.css">
     <?php if (basename($_SERVER['PHP_SELF'], '.php') === 'about'): ?>
     <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/about.css">
@@ -144,7 +144,7 @@ require_once 'includes/functions.php';
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary text-white ms-2 px-4" href="<?php echo SITE_URL; ?>/about.php#contact">Contact Us</a>
+                            <a class="nav-link btn btn-primary text-white ms-2 px-4 btn-contact-cta" href="<?php echo SITE_URL; ?>/about.php#contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
