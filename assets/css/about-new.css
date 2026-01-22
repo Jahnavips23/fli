@@ -96,18 +96,19 @@
     margin-bottom: 30px;
 }
 
-.about-image {
-    position: relative;
+.img-backdrop {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 60%;
+    height: 100%;
+    background-color: #f8f9fa;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    transform: perspective(1000px) rotateY(5deg);
-    transition: all 0.5s ease;
+    z-index: -1;
 }
 
-.about-image:hover {
-    transform: perspective(1000px) rotateY(0deg);
-}
+/* Removed old .about-image transform to match Home page style */
+/* .about-image { ... } overridden/unused now */
 
 .about-image img {
     width: 100%;
@@ -176,19 +177,24 @@
     background: linear-gradient(to right, #0d6efd, #0a58ca);
 }
 
+/* Feature Box Animations */
 .feature-box {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .feature-box:hover {
-    background-color: #f8f9fa;
-    transform: translateX(5px);
+    background-color: #fff;
+    transform: translateY(-5px) translateX(5px);
+    box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15);
+    border-color: rgba(13, 110, 253, 0.2);
 }
 
 .icon-box {
@@ -203,11 +209,31 @@
     margin-right: 15px;
     flex-shrink: 0;
     box-shadow: 0 5px 15px rgba(13, 110, 253, 0.2);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .feature-box:hover .icon-box {
-    transform: rotateY(180deg);
+    transform: rotate(360deg);
+}
+
+.icon-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.feature-box:hover .icon-box::after {
+    width: 200%;
+    height: 200%;
 }
 
 .icon-box i {
@@ -215,8 +241,15 @@
     transition: all 0.3s ease;
 }
 
-.feature-box:hover .icon-box i {
-    transform: rotateY(-180deg);
+/* Shimmer Title */
+.about-section .section-title h2 {
+    display: inline-block;
+    background: linear-gradient(to right, #0d6efd 0%, #33ccff 50%, #0d6efd 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
 }
 
 /* Vision & Mission Section */
@@ -759,6 +792,11 @@
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.4);
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
     }
 
     70% {
@@ -767,6 +805,7 @@
 
     100% {
         box-shadow: 0 0 0 0 rgba(13, 110, 253, 0);
+        transform: scale(1);
     }
 }
 
@@ -898,27 +937,76 @@
 .team-card {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     height: 100%;
     overflow: hidden;
     background: #fff;
     cursor: pointer;
+    position: relative;
+    border-bottom: 3px solid transparent;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(13, 110, 253, 0) 0%, rgba(13, 110, 253, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .team-card:hover {
-    transform: translateY(-5px) scale(1.04);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-bottom-color: #0d6efd;
+}
+
+.team-card:hover::before {
+    opacity: 1;
 }
 
 .team-image {
     overflow: hidden;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+/* Shine Effect */
+.team-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: none;
+}
+
+.team-card:hover .team-image::after {
+    left: 125%;
+    transition: left 0.7s ease-in-out;
 }
 
 .team-image img {
-    transition: transform 0.3s ease;
     width: 100%;
-    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Fix Alignment */
+.team-image {
+    height: 250px;
+    /* Fixed height for consistent row alignment */
+    width: 100%;
 }
 
 .team-card:hover .team-image img {
@@ -927,12 +1015,16 @@
 
 .team-info {
     padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .team-info h4 {
     font-weight: 700;
     margin-bottom: 5px;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .team-info p {
@@ -940,7 +1032,67 @@
     text-align-last: left;
 }
 
-/* Justify About Content Text - Enhanced Specificity */
+.team-role {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-role {
+    color: #FF9F43 !important;
+    /* Orange highlight on hover */
+    letter-spacing: 2px;
+}
+
+/* Animations added */
+.team-info h4,
+.team-role,
+.team-info p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Social Icon Overlay Animation */
+.team-social-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(13, 110, 253, 0.9) 0%, rgba(13, 110, 253, 0) 100%);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 3;
+}
+
+.team-card:hover .team-social-overlay {
+    transform: translateY(0);
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color, #0d6efd);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: #FF9F43;
+    color: #fff !important;
+    transform: translateY(-5px);
+}
+
 .about-section .about-content p,
 .about-section .about-content p.lead {
     text-align: justify !important;

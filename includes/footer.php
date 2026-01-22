@@ -112,6 +112,7 @@
     <?php if (basename($_SERVER['PHP_SELF'], '.php') === 'index'): ?>
     <script src="<?php echo SITE_URL; ?>/assets/js/counter.js"></script>
     <?php endif; ?>
+    <script src="<?php echo SITE_URL; ?>/assets/js/about-scroll.js?v=<?php echo time(); ?>"></script>
     
     <script>
         // Initialize AOS

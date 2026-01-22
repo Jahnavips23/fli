@@ -7,7 +7,7 @@ include 'includes/header.php';
 ?>
 
 <!-- Custom CSS for the new About page -->
-<link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/about-new.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/about-new.css?v=<?php echo time(); ?>_2">
 
 <?php
 // Get testimonials
@@ -19,9 +19,9 @@ $testimonials = get_testimonials();
     <div class="container about-hero-content">
         <div class="row">
             <div class="col-lg-8">
-                <h1>Transforming Education Through Technology</h1>
-                <p>At FLIONE, we're building the future of education with innovative, child-centric technology solutions that empower schools and inspire young minds.</p>
-                <a href="#contact" class="btn btn-light btn-lg">Get In Touch</a>
+                <h1 class="hero-title">Transforming Education Through Technology</h1>
+                <p class="hero-desc">At FLIONE, we're building the future of education with innovative, child-centric technology solutions that empower schools and inspire young minds.</p>
+                <a href="#contact" class="btn btn-light btn-lg hero-btn">Get In Touch</a>
             </div>
         </div>
     </div>
@@ -31,14 +31,16 @@ $testimonials = get_testimonials();
 </section>
 
 <!-- About Us Section -->
-<section id="about" class="about-section">
+<section id="about" class="about-section position-relative overflow-hidden">
+    <!-- Alternate Background: Tech Grid -->
+    <div class="tech-grid-bg"></div>
+
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="about-image-wrapper" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="about-image">
-                        <img src="<?php echo SITE_URL; ?>/assets/images/about/about-main.jpg" alt="FLIONE Team" class="img-fluid">
-                    </div>
+                <div class="about-image-wrapper item-tilt" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="img-backdrop"></div>
+                    <img src="<?php echo SITE_URL; ?>/assets/images/about/about-main.jpg" alt="FLIONE Team" class="img-fluid rounded shadow-lg position-relative tilt-element">
                     <div class="experience-badge">
                         <span class="years">5+</span>
                         <span class="text">Years of<br>Experience</span>
@@ -95,6 +97,64 @@ $testimonials = get_testimonials();
 </section>
 
 
+
+
+<!-- Our Team Section -->
+<section class="team-section position-relative overflow-hidden">
+    <!-- Floating Background Shapes -->
+    <div class="anim-shape shape-1"></div>
+    <div class="anim-shape shape-2"></div>
+    
+    <div class="container position-relative z-index-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <div class="section-title mb-5">
+                    <h2 class="title">Our Team</h2>
+                    <div class="title-border mx-auto"></div>
+                    <p class="mt-3">Meet the dedicated professionals behind FLIONE</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png" alt="Suchitha" class="img-fluid">
+                        <div class="team-social-overlay">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Suchitha</h4>
+                        <p class="text-primary text-center mb-3 font-weight-bold team-role">Team lead</p>
+                        <p>With a vision to transform education, Suchitha leads the team with passion and expertise to build a better future for students.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person2.png" alt="Sumanth" class="img-fluid">
+                        <div class="team-social-overlay">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Sumanth</h4>
+                        <p class="text-primary text-center mb-3 font-weight-bold team-role">Flutter developer</p>
+                        <p>Driving technical innovation, Sumanth ensures FLIONE stays ahead of the curve, delivering robust and scalable solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Vision & Mission Section -->
 <section class="vision-mission-section">

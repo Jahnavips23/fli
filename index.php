@@ -54,59 +54,94 @@ $recent_posts = get_recent_blog_posts(3);
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-laptop-code"></i>
+        <div class="row g-4">
+            <!-- Innovative Solutions -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="interactive-card">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/features/innovative-solutions.png" alt="Innovative Solutions" class="card-bg-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="card-icon mb-2">
+                           <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Innovative Solutions</h4>
+                        <p>We leverage the latest technologies to deliver cutting-edge IT solutions that drive growth and efficiency.</p>
                     </div>
-                    <h4>Innovative Solutions</h4>
-                    <p>We leverage the latest technologies to deliver cutting-edge IT solutions that drive growth and efficiency.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-graduation-cap"></i>
+            
+            <!-- Educational Expertise -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="interactive-card">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/features/educational-exp.jpg" alt="Educational Expertise" class="card-bg-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="card-icon mb-2">
+                           <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Educational Expertise</h4>
+                        <p>Our specialized knowledge in educational technology helps schools enhance learning experiences.</p>
                     </div>
-                    <h4>Educational Expertise</h4>
-                    <p>Our specialized knowledge in educational technology helps schools enhance learning experiences.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-child"></i>
+            
+            <!-- Kid-Friendly Technology -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="interactive-card">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/features/kids-friendly-tech.jpg" alt="Kid-Friendly Technology" class="card-bg-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                         <div class="card-icon mb-2">
+                           <i class="fas fa-child"></i>
+                        </div>
+                        <h4>Kid-Friendly Technology</h4>
+                        <p>We create safe, engaging, and educational technology resources specifically designed for children.</p>
                     </div>
-                    <h4>Kid-Friendly Technology</h4>
-                    <p>We create safe, engaging, and educational technology resources specifically designed for children.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
+            
+            <!-- 6 Days a week Support -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="interactive-card">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/carousel/1752243240_3d-abstract-dots-lines-connected.jpg" alt="Support" class="card-bg-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                         <div class="card-icon mb-2">
+                           <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>6 Days a week Support</h4>
+                        <p>Our dedicated support team is available around the clock to assist you with any technical issues.</p>
                     </div>
-                    <h4>6 Days a week Support</h4>
-                    <p>Our dedicated support team is available around the clock to assist you with any technical issues.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+            
+            <!-- Enhanced Security -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="interactive-card">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/features/Enhanced-Security.png" alt="Enhanced Security" class="card-bg-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                         <div class="card-icon mb-2">
+                           <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Enhanced Security</h4>
+                        <p>We implement robust security measures to protect your data and systems from potential threats.</p>
                     </div>
-                    <h4>Enhanced Security</h4>
-                    <p>We implement robust security measures to protect your data and systems from potential threats.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+            
+            <!-- Performance Optimization -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="interactive-card">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/features/performance-optimization.png" alt="Performance Optimization" class="card-bg-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                         <div class="card-icon mb-2">
+                           <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Performance Optimization</h4>
+                        <p>Our solutions are designed to optimize performance and maximize efficiency for your business.</p>
                     </div>
-                    <h4>Performance Optimization</h4>
-                    <p>Our solutions are designed to optimize performance and maximize efficiency for your business.</p>
                 </div>
             </div>
         </div>
@@ -114,27 +149,34 @@ $recent_posts = get_recent_blog_posts(3);
 </section>
 
 <!-- About Section -->
-<section class="about-section section-padding bg-light-blue">
-    <div class="container">
+<section class="about-section section-padding bg-light-blue position-relative overflow-hidden">
+    <!-- Floating Background Shapes -->
+    <div class="anim-shape shape-1"></div>
+    <div class="anim-shape shape-2"></div>
+    <div class="anim-shape shape-3"></div>
+
+    <div class="container position-relative z-index-1">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                <div class="about-img">
-                    <img src="<?php echo SITE_URL; ?>/assets/images/about-img.png" alt="About Flione IT" class="img-fluid">
+                <div class="about-img-wrapper item-tilt">
+                    <div class="img-backdrop"></div>
+                    <img src="<?php echo SITE_URL; ?>/assets/images/about-img.png" alt="About Flione IT" class="img-fluid rounded shadow-lg position-relative tilt-element">
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
-                <div class="about-content">
-                    <h2>About Flione IT</h2>
+                <div class="about-content ps-lg-4">
+                    <h2 class="mb-4 fw-bold">About Flione IT</h2>
+                    <p class="lead text-primary mb-4 position-relative d-inline-block shimmer-text">Innovating Education & Technology</p>
                     <p>Flione IT is a leading provider of innovative technology solutions for educational institutions, and individuals. With years of experience and a team of skilled professionals, we deliver cutting-edge IT services tailored to meet the unique needs of our clients.</p>
                     <p>Our mission is to empower organizations and individuals through technology, helping them achieve their goals and stay ahead in today's digital world.</p>
-                    <ul class="list-unstyled">
-                        <li>Comprehensive IT solutions for businesses of all sizes</li>
-                        <li>Specialized educational technology for schools and learning institutions</li>
-                        <li>Kid-friendly resources that make learning fun and engaging</li>
-                        <li>Dedicated support team 6 Days a week</li>
-                        <li>Customized solutions tailored to your specific needs</li>
+                    <ul class="list-unstyled mt-4 about-feature-list">
+                        <li class="mb-2" style="--d: 0.1s">Comprehensive IT solutions for businesses</li>
+                        <li class="mb-2" style="--d: 0.2s">Specialized educational technology</li>
+                        <li class="mb-2" style="--d: 0.3s">Kid-friendly resources that make learning fun</li>
+                        <li class="mb-2" style="--d: 0.4s">Dedicated support team 6 Days a week</li>
+                        <li class="mb-2" style="--d: 0.5s">Customized solutions tailored to your needs</li>
                     </ul>
-                    <a href="<?php echo SITE_URL; ?>/about.php" class="btn btn-primary">Learn More About Us</a>
+                    <a href="<?php echo SITE_URL; ?>/about.php" class="btn btn-primary mt-3 btn-lg rounded-pill shadow-sm">Learn More About Us</a>
                 </div>
             </div>
         </div>
