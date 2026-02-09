@@ -1,6 +1,10 @@
 <?php
 require_once 'includes/config.php';
 
+if (!defined("ADMIN_EMAIL")) {
+    define("ADMIN_EMAIL", "test@gmail.com");
+}
+
 // Initialize response array
 $response = [
     'success' => false,
