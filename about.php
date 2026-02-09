@@ -121,74 +121,86 @@ $testimonials = get_testimonials();
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <!-- Team Member New (Founder) -->
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="<?php echo SITE_URL; ?>/assets/images/team/founder.png" alt="Srinidhi Chilakamarri K"
-                            class="img-fluid">
-                        <div class="team-social-overlay">
-                            <a href="https://www.linkedin.com/in/srinidhi-chilakamarri-k-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <div class="team-carousel-wrapper position-relative">
+            <!-- Navigation Buttons Removed for Static Layout -->
+
+            <div class="team-carousel-container" id="teamCarouselContainer">
+                <div class="team-carousel-track" id="teamCarouselTrack">
+                    <!-- Team Member New (Founder) -->
+                    <div class="team-card-wrapper">
+                        <div class="team-card">
+                            <div class="team-header">
+                                <div class="team-image-circle">
+                                    <img src="<?php echo SITE_URL; ?>/assets/images/team/founder.png"
+                                        alt="Srinidhi Chilakamarri K">
+                                    <div class="team-social-overlay">
+                                        <a href="https://www.linkedin.com/in/srinidhi-chilakamarri-k-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                            class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                                <h4 class="mt-3 mb-1">Srinidhi Chilakamarri K</h4>
+                                <p class="team-role">Founder and CEO</p>
+                            </div>
+                            <div class="team-bio-box">
+                                <p>Srinidhi leads the company’s mission to transform education through purposeful
+                                    technology. With experience in school ERP systems, RFID automation, robotics labs,
+                                    and digital learning solutions.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="team-info">
-                        <h4>Srinidhi Chilakamarri K</h4>
-                        <p class="text-primary text-center mb-3 font-weight-bold team-role">Founder and CEO</p>
-                        <p>Srinidhi leads the company’s mission to transform education through purposeful technology.
-                            With experience in school ERP systems, RFID automation, robotics labs, and digital learning
-                            solutions, he focuses on building scalable, affordable, and future-ready education
-                            technologies that empower students, educators, and institutions across India.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Team Member 1 -->
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png" alt="Suchitha"
-                            class="img-fluid">
-                        <div class="team-social-overlay">
-                            <a href="https://www.linkedin.com/in/suchitha-hs/" class="social-icon"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+
+                    <!-- Team Member 1 -->
+                    <div class="team-card-wrapper">
+                        <div class="team-card">
+                            <div class="team-header">
+                                <div class="team-image-circle">
+                                    <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png" alt="Suchitha">
+                                    <div class="team-social-overlay">
+                                        <a href="https://www.linkedin.com/in/suchitha-hs/" class="social-icon"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                                <h4 class="mt-3 mb-1">Suchitha</h4>
+                                <p class="team-role">Chief Technology Officer(CTO)</p>
+                            </div>
+                            <div class="team-bio-box">
+                                <p>Leads the development team while designing, developing, and maintaining scalable web
+                                    applications using PHP, Python, and SQL. Oversees backend architecture.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="team-info">
-                        <h4>Suchitha</h4>
-                        <p class="text-primary text-center mb-3 font-weight-bold team-role">Team lead</p>
-                        <p>Leads the development team while designing, developing, and maintaining scalable web
-                            applications using PHP, Python, and SQL. Oversees backend architecture, ensures code quality
-                            and security, and guides the team to deliver high-performance, reliable solutions.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Team Member 2 -->
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person2.png" alt="Sumanth"
-                            class="img-fluid">
-                        <div class="team-social-overlay">
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-card-wrapper">
+                        <div class="team-card">
+                            <div class="team-header">
+                                <div class="team-image-circle">
+                                    <img src="<?php echo SITE_URL; ?>/assets/images/team/person2.png" alt="Sumant">
+                                    <div class="team-social-overlay">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                                <h4 class="mt-3 mb-1">Sumanth</h4>
+                                <p class="team-role">Senior Flutter Developer</p>
+                            </div>
+                            <div class="team-bio-box">
+                                <p>Driving technical innovation, Sumanth ensures FLIONE stays ahead of the curve,
+                                    delivering robust and scalable solutions for mobile platforms.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="team-info">
-                        <h4>Sumanth</h4>
-                        <p class="text-primary text-center mb-3 font-weight-bold team-role">Flutter developer</p>
-                        <p>Driving technical innovation, Sumanth ensures FLIONE stays ahead of the curve, delivering
-                            robust and scalable solutions.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- No Auto Scroll Script Needed for Static Layout -->
 </section>
 
 <!-- Vision & Mission Section -->

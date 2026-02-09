@@ -1104,3 +1104,230 @@
     text-align: justify !important;
     text-align-last: left !important;
 }
+
+/* Team Section Redesign - Final Static Polish */
+.team-section {
+    padding: 60px 0;
+    position: relative;
+    background-color: #fcfcfc;
+}
+
+.team-carousel-wrapper {
+    position: relative;
+    padding: 0;
+}
+
+.team-carousel-container {
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+/* Scrollbar hiding no longer needed but harmless */
+.team-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.team-carousel-track {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.team-card-wrapper {
+    flex: 0 0 auto;
+    width: 350px;
+    padding: 15px;
+    transition: all 0.5s ease;
+}
+
+.team-card {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+/* Header Part: Image and Name */
+.team-header {
+    margin-bottom: 25px;
+    transition: all 0.5s ease;
+}
+
+.team-image-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-card-wrapper:hover .team-image-circle {
+    /* transform: scale(1.1); Removed to fix cropping */
+    border-color: #0d6efd;
+    box-shadow: 0 15px 35px rgba(13, 110, 253, 0.2);
+}
+
+.team-card-wrapper:hover .team-image-circle img {
+    transform: scale(1.1);
+}
+
+/* Circular Overlay */
+.team-social-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 86, 179, 0.7);
+    /* Brand Primary Transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.team-card-wrapper:hover .team-social-overlay {
+    opacity: 1;
+}
+
+.team-social-overlay .social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 1.1rem;
+
+    /* Default State: White with Blue Icon */
+    background: #fff;
+    color: var(--primary-color);
+}
+
+/* Hover State: Orange with White Icon */
+.team-social-overlay .social-icon:hover {
+    background: #fd7e14;
+    /* Orange */
+    color: #fff;
+    transform: translateY(-3px) scale(1.1);
+}
+
+.team-header h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-role {
+    color: #777;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+/* Bio Box Part */
+.team-bio-box {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 0;
+    position: relative;
+    transition: all 0.3s ease;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.team-card-wrapper:hover .team-bio-box {
+    background: var(--primary-color);
+    /* Strict Brand Match */
+    color: #fff;
+    box-shadow: 0 20px 50px rgba(0, 86, 179, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Triangle indicator for active box */
+.team-bio-box::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--primary-color);
+    /* Match active bg */
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-card-wrapper:hover .team-bio-box::before {
+    opacity: 1;
+}
+
+.team-bio-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: inherit;
+}
+
+/* Button Navigation */
+.team-nav-btn {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+
+.team-nav-btn:hover {
+    background: #00bed6;
+    color: #fff;
+    border-color: #00bed6;
+}
+
+@media (max-width: 768px) {
+    .team-card-wrapper {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 30px;
+    }
+
+    .team-image-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .team-bio-box {
+        padding: 20px;
+        min-height: auto;
+    }
+}

@@ -3,7 +3,7 @@
  * Process pending project update notifications
  * 
  * This script should be run via cron job to send pending notifications
- * Example cron: */5 * * * * php /path/to/send-project-notifications.php
+ * Example cron: * /5 * * * * php /path/to/send-project-notifications.php
  */
 
 // Set script execution time limit
