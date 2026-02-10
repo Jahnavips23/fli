@@ -155,10 +155,10 @@ include 'includes/header.php';
                                     <i class="fas fa-box fa-4x text-muted"></i>
                                 </div>
                             <?php endif; ?>
-                            <div class="card-body">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title"><?php echo $product['name']; ?></h5>
                                 <p class="card-text"><?php echo $product['short_description']; ?></p>
-                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
                                     <?php if ($product['price'] > 0): ?>
                                         <span class="product-price">₹<?php echo number_format($product['price'], 2); ?></span>
                                     <?php else: ?>

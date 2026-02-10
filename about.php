@@ -158,10 +158,10 @@ $testimonials = get_testimonials();
                                 <div class="team-image-circle">
                                     <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png" alt="Suchitha">
                                     <div class="team-social-overlay">
-                                        <a href="https://www.linkedin.com/in/suchitha-hs/" class="social-icon"><i
+                                        <a href="https://www.linkedin.com/in/suchitha-hs/" class="social-icon" target="_blank"><i
                                                 class="fab fa-linkedin-in"></i></a>
-                                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                        <a href="https://www.instagram.com/suchitha27?igsh=dDZ3enAwYzJwYXc5" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://mail.google.com/mail/?view=cm&to=parisuchi27@gmail.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
                                     </div>
                                 </div>
                                 <h4 class="mt-3 mb-1">Suchitha</h4>
@@ -179,18 +179,18 @@ $testimonials = get_testimonials();
                         <div class="team-card">
                             <div class="team-header">
                                 <div class="team-image-circle">
-                                    <img src="<?php echo SITE_URL; ?>/assets/images/team/person2.png" alt="Sumant">
+                                    <img src="<?php echo SITE_URL; ?>/assets/images/team/sumant.png" alt="Sumant">
                                     <div class="team-social-overlay">
                                         <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                                         <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
                                     </div>
                                 </div>
-                                <h4 class="mt-3 mb-1">Sumanth</h4>
+                                <h4 class="mt-3 mb-1">Sumant</h4>
                                 <p class="team-role">Senior Flutter Developer</p>
                             </div>
                             <div class="team-bio-box">
-                                <p>Driving technical innovation, Sumanth ensures FLIONE stays ahead of the curve,
+                                <p>Driving technical innovation, Sumant ensures FLIONE stays ahead of the curve,
                                     delivering robust and scalable solutions for mobile platforms.</p>
                             </div>
                         </div>

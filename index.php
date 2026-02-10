@@ -752,7 +752,7 @@ $testimonials = get_testimonials(3);
                 <img src="<?php echo SITE_URL; ?>/assets/images/clients/ksvp_logo.jpg" alt="KSVP Client" class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/client-1.png" alt="Client" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/jnana-deepthi.jpg" alt="Jnana Deepthi English School Client" class="img-fluid">
             </div>
             <div class="partner-item">
                 <img src="<?php echo SITE_URL; ?>/assets/images/clients/client-2.png" alt="Client" class="img-fluid">

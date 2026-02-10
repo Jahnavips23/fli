@@ -249,10 +249,9 @@ include 'includes/header.php';
                 <h2 class="section-title">Inspiring the Next Generation of Innovators</h2>
                 <p>At Flione IT, we believe that technology education should be fun, engaging, and accessible to children of all ages. Our specially designed programs introduce kids to coding, robotics, digital art, and more in a supportive and creative environment.</p>
                 <p>Led by experienced instructors who are passionate about technology and education, our programs help children develop critical thinking, problem-solving skills, and digital literacy while fostering creativity and collaboration.</p>
-                <div class="mt-4">
-                    <a href="#programs" class="btn btn-primary">Explore Our Programs</a>
-                    <a href="#products" class="btn btn-success ms-2">Shop Educational Products</a>
-                   
+                <div class="mt-4 d-flex gap-3">
+                    <a href="#programs" class="btn btn-primary btn-rect text-nowrap">Explore Our Programs</a>
+                    <a href="#products" class="btn btn-success btn-rect text-nowrap">Shop Educational Products</a>
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
