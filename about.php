@@ -106,6 +106,74 @@ $testimonials = get_testimonials();
 
 
 
+
+
+<!-- Vision & Mission Section -->
+<section class="vision-mission-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="section-title mb-5">
+                    <h2 class="title">Our Vision & Mission</h2>
+                    <div class="title-border mx-auto"></div>
+                    <p class="mt-3">Guiding principles that drive our innovation and impact</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="vision-mission-tabs">
+            <div class="vm-tab-nav" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <button class="vm-tab-btn active" data-tab="vision">Our Vision</button>
+                <button class="vm-tab-btn" data-tab="mission">Our Mission</button>
+            </div>
+
+            <div class="vm-tab-content active" id="vision" data-aos="fade-up" data-aos-duration="800"
+                data-aos-delay="300">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="vm-card">
+                            <div class="vm-card-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Our Vision</h3>
+                            <p>To transform education by building future-ready learning ecosystems that empower every
+                                child to thrive through inspired, technology-driven experiences.We envision a world
+                                where learning goes beyond classrooms, fostering creativity, critical thinking, and
+                                lifelong curiosity. By integrating innovation, accessibility, and modern digital tools,
+                                we aim to create inclusive educational environments that prepare students to adapt,
+                                grow, and succeed in an ever-evolving global landscape.</p>
+                            <img src="<?php echo SITE_URL; ?>/assets/images/about/vision.png" alt="FLIONE Vision"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vm-tab-content" id="mission" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="vm-card">
+                            <div class="vm-card-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h3>Our Mission</h3>
+                            <p>To design and deliver innovative educational technologies that optimize school
+                                infrastructure, engage students, and enable educators to create nurturing, next-gen
+                                learning environments. We strive to bridge the gap between traditional education and
+                                modern skill requirements by providing engaging platforms, personalized learning
+                                experiences, and continuous support for students, educators, and institutions. Through
+                                collaboration and innovation, we are committed to nurturing confident learners who are
+                                equipped for the challenges of tomorrow.</p>
+                            <img src="<?php echo SITE_URL; ?>/assets/images/about/mission.jpg" alt="FLIONE Mission"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Our Team Section -->
 <section class="team-section position-relative overflow-hidden">
     <!-- Floating Background Shapes -->
@@ -136,7 +204,7 @@ $testimonials = get_testimonials();
                             <div class="team-card">
                                 <div class="team-header">
                                     <div class="team-image-circle">
-                                        <img src="<?php echo SITE_URL; ?>/assets/images/team/founder.png"
+                                        <img src="<?php echo SITE_URL; ?>/assets/images/team/srinidhi.jpg"
                                             alt="Srinidhi Chilakamarri K">
                                         <div class="team-social-overlay">
                                             <a href="https://www.linkedin.com/in/srinidhi-chilakamarri-k-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -213,7 +281,7 @@ $testimonials = get_testimonials();
                             <div class="team-card">
                                 <div class="team-header">
                                     <div class="team-image-circle">
-                                        <img src="<?php echo SITE_URL; ?>/assets/images/team/founder.png"
+                                        <img src="<?php echo SITE_URL; ?>/assets/images/team/srinidhi.jpg"
                                             alt="Srinidhi Chilakamarri K">
                                         <div class="team-social-overlay">
                                             <a href="https://www.linkedin.com/in/srinidhi-chilakamarri-k-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -321,72 +389,6 @@ $testimonials = get_testimonials();
             },
         });
     </script>
-</section>
-
-<!-- Vision & Mission Section -->
-<section class="vision-mission-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
-                <div class="section-title mb-5">
-                    <h2 class="title">Our Vision & Mission</h2>
-                    <div class="title-border mx-auto"></div>
-                    <p class="mt-3">Guiding principles that drive our innovation and impact</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="vision-mission-tabs">
-            <div class="vm-tab-nav" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                <button class="vm-tab-btn active" data-tab="vision">Our Vision</button>
-                <button class="vm-tab-btn" data-tab="mission">Our Mission</button>
-            </div>
-
-            <div class="vm-tab-content active" id="vision" data-aos="fade-up" data-aos-duration="800"
-                data-aos-delay="300">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="vm-card">
-                            <div class="vm-card-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <h3>Our Vision</h3>
-                            <p>To transform education by building future-ready learning ecosystems that empower every
-                                child to thrive through inspired, technology-driven experiences.We envision a world
-                                where learning goes beyond classrooms, fostering creativity, critical thinking, and
-                                lifelong curiosity. By integrating innovation, accessibility, and modern digital tools,
-                                we aim to create inclusive educational environments that prepare students to adapt,
-                                grow, and succeed in an ever-evolving global landscape.</p>
-                            <img src="<?php echo SITE_URL; ?>/assets/images/about/vision.png" alt="FLIONE Vision"
-                                class="img-fluid rounded">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="vm-tab-content" id="mission" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="vm-card">
-                            <div class="vm-card-icon">
-                                <i class="fas fa-bullseye"></i>
-                            </div>
-                            <h3>Our Mission</h3>
-                            <p>To design and deliver innovative educational technologies that optimize school
-                                infrastructure, engage students, and enable educators to create nurturing, next-gen
-                                learning environments. We strive to bridge the gap between traditional education and
-                                modern skill requirements by providing engaging platforms, personalized learning
-                                experiences, and continuous support for students, educators, and institutions. Through
-                                collaboration and innovation, we are committed to nurturing confident learners who are
-                                equipped for the challenges of tomorrow.</p>
-                            <img src="<?php echo SITE_URL; ?>/assets/images/about/mission.jpg" alt="FLIONE Mission"
-                                class="img-fluid rounded">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
 <!-- Our Values Section -->

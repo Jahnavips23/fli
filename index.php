@@ -29,7 +29,7 @@ $recent_posts = get_recent_blog_posts(3);
                         <p class="animate__animated animate__fadeInUp"><?php echo $slide['description']; ?></p>
                         <?php if (!empty($slide['button_text']) && !empty($slide['button_link'])): ?>
                             <a href="<?php echo $slide['button_link']; ?>"
-                                class="btn btn-primary animate__animated animate__fadeInUp"><?php echo $slide['button_text']; ?></a>
+                                class="btn btn-primary btn-rect animate__animated animate__fadeInUp"><?php echo $slide['button_text']; ?></a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ $recent_posts = get_recent_blog_posts(3);
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center">
-                    <h2><i class="fas fa-star text-warning me-2"></i>Why Choose Us</h2>
+                    <h2>Why Choose Us</h2>
                     <p>We provide innovative IT solutions tailored to meet the unique needs of businesses, schools, and
                         educational institutions.</p>
                 </div>
@@ -198,7 +198,7 @@ $recent_posts = get_recent_blog_posts(3);
                         <li class="mb-2" style="--d: 0.5s">Customized solutions tailored to your needs</li>
                     </ul>
                     <a href="<?php echo SITE_URL; ?>/about.php"
-                        class="btn btn-primary mt-3 btn-lg rounded-pill shadow-sm">Learn More About Us</a>
+                        class="btn btn-primary mt-3 btn-lg btn-rect shadow-sm">Learn More About Us</a>
                 </div>
             </div>
         </div>
@@ -223,7 +223,7 @@ try {
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center">
-                    <h2><i class="fas fa-shapes text-success me-2"></i>Our Services</h2>
+                    <h2>Our Services</h2>
                     <p>We offer a wide range of educational technology solutions to help schools and institutions thrive
                         in the digital age.</p>
                 </div>
@@ -373,7 +373,7 @@ try {
         </script>
 
         <div class="text-center mt-4" data-aos="fade-up">
-            <a href="<?php echo SITE_URL; ?>/about.php#services" class="btn btn-outline-primary">Learn More About Our
+            <a href="<?php echo SITE_URL; ?>/about.php#services" class="btn btn-outline-primary btn-rect">Learn More About Our
                 Services</a>
         </div>
     </div>
@@ -673,7 +673,7 @@ $testimonials = get_testimonials(3);
                 <p class="mb-0">Contact us today to discuss how we can help you achieve your technology goals.</p>
             </div>
             <div class="col-lg-3 text-lg-end" data-aos="fade-left">
-                <a href="<?php echo SITE_URL; ?>/about.php#contact" class="btn btn-light btn-lg">Contact Us</a>
+                <a href="<?php echo SITE_URL; ?>/about.php#contact" class="btn btn-light btn-lg btn-rect">Contact Us</a>
             </div>
         </div>
     </div>
@@ -685,7 +685,7 @@ $testimonials = get_testimonials(3);
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center">
-                    <h2><i class="fas fa-newspaper text-info me-2"></i>Latest Blog Posts</h2>
+                    <h2>Latest Blog Posts</h2>
                     <p>Stay updated with our latest news, insights, and educational content.</p>
                 </div>
             </div>
@@ -731,7 +731,7 @@ $testimonials = get_testimonials(3);
             <?php endif; ?>
         </div>
         <div class="text-center mt-4" data-aos="fade-up">
-            <a href="<?php echo SITE_URL; ?>/blog.php" class="btn btn-outline-primary">View All Blog Posts</a>
+            <a href="<?php echo SITE_URL; ?>/blog.php" class="btn btn-outline-primary btn-rect">View All Blog Posts</a>
         </div>
     </div>
 </section>

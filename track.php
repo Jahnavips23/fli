@@ -162,11 +162,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_ticket'])) {
     $file_upload = $_FILES['attachment'] ?? null;
 
     // Validation
-    if (empty($client_name) || empty($email) || empty($phone) || empty($subject) || empty($description)) {
-        $ticket_error = "All fields are required.";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $ticket_error = "Invalid email address.";
-    } else {
+   if (empty($client_name) || empty($email) || empty($phone) || empty($subject) || empty($description)) {
+    $ticket_error = "All fields are required.";
+} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $ticket_error = "Invalid email address.";
+} elseif ($_POST['email_verified'] != 1) {
+    $ticket_error = "Please verify your email before submitting.";
+} else {
         // File Upload Handling
         $attachment_path = null;
         if ($file_upload && $file_upload['error'] === UPLOAD_ERR_OK) {
@@ -247,26 +249,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_ticket'])) {
                 // Re-preparing statement with appended description
                 $full_description = "Client Name: $client_name\nPhone: $phone\n\n" . $description;
                 
-                $stmt = $db->prepare("
-                    INSERT INTO customer_tickets (
-                        ticket_number, customer_email, subject, description, 
-                        status_id, priority_id, category_id, attachment, created_at
-                    ) VALUES (
-                        :ticket_number, :email, :subject, :description, 
-                        :status_id, :priority_id, :category_id, :attachment, NOW()
-                    )
-                ");
-
-                $stmt->execute([
-                    ':ticket_number' => $ticket_number,
-                    ':email' => $email,
-                    ':subject' => $subject,
-                    ':description' => $full_description,
-                    ':status_id' => $status_id,
-                    ':priority_id' => $priority_id,
-                    ':category_id' => $category_id,
-                    ':attachment' => $attachment_path
-                ]);
+                
 
                 $ticket_success = "Ticket raised successfully! Your Ticket Number is: <strong>$ticket_number</strong>";
                 
@@ -522,9 +505,7 @@ include 'includes/header.php';
                     </div>
                 <?php endif; ?>
                 
-                <div class="text-center mt-5">
-                    <p>If you have any questions, please contact us at <a href="mailto:<?php echo get_setting('contact_email'); ?>"><?php echo get_setting('contact_email'); ?></a></p>
-                </div>
+
             </div>
         </div>
     </div>
@@ -571,6 +552,20 @@ include 'includes/header.php';
                             <div class="mb-3">
                                 <label for="ticket_email" class="form-label">Email Address <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control" id="ticket_email" name="email" value="<?php echo htmlspecialchars($email ?? ''); ?>" required>
+                                <button type="button" id="sendOtpBtn" class="btn btn-primary mt-2">
+                                    Send OTP
+                                </button>
+                                <span id="otpTimer" class="ms-2 fw-bold text-danger"></span>
+
+                                <div class="mt-3">
+                                    <input type="text" id="otp" class="form-control" placeholder="Enter OTP">
+                                    <button type="button" id="verifyOtpBtn" class="btn btn-primary mt-2">
+        Verify OTP
+    </button>
+</div>
+
+<input type="hidden" name="email_verified" id="email_verified" value="0">
+
                             </div>
 
                             <div class="mb-3">
@@ -593,6 +588,9 @@ include 'includes/header.php';
                                 <button type="submit" class="btn btn-primary btn-lg">Submit Ticket</button>
                             </div>
                         </form>
+                        <div class="text-center mt-4">
+                            <p class="mb-0">If you have any questions, please contact us at <a href="mailto:<?php echo get_setting('contact_email'); ?>"><?php echo get_setting('contact_email'); ?></a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -663,5 +661,89 @@ include 'includes/header.php';
     white-space: pre-line;
 }
 </style>
+
+<script>
+document.getElementById('sendOtpBtn').onclick = function() {
+    const email = document.getElementById('ticket_email').value;
+    const sendBtn = document.getElementById('sendOtpBtn');
+    const timerDisplay = document.getElementById('otpTimer');
+
+    if (!email) {
+        alert("Please enter an email address first.");
+        return;
+    }
+
+    // Disable button immediately to prevent double clicks
+    sendBtn.disabled = true;
+    sendBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
+
+    fetch('send_otp.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: 'email=' + encodeURIComponent(email)
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert("OTP Sent Successfully!");
+            
+            // Start 5 minute timer (300 seconds)
+            let duration = 300;
+            let timer = duration, minutes, seconds;
+            
+            const countdown = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                timerDisplay.textContent = "Resend in " + minutes + ":" + seconds;
+                sendBtn.disabled = true;
+                sendBtn.textContent = "OTP Sent";
+
+                if (--timer < 0) {
+                    clearInterval(countdown);
+                    timerDisplay.textContent = "";
+                    sendBtn.disabled = false;
+                    sendBtn.textContent = "Resend OTP";
+                }
+            }, 1000);
+            
+        } else {
+            alert(data.message || "Failed to send OTP");
+            sendBtn.disabled = false;
+            sendBtn.textContent = "Send OTP";
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert("An error occurred. Please try again.");
+        sendBtn.disabled = false;
+        sendBtn.textContent = "Send OTP";
+    });
+};
+
+document.getElementById('verifyOtpBtn').onclick = function() {
+
+    const email = document.getElementById('ticket_email').value;
+    const otp = document.getElementById('otp').value;
+
+    fetch('verify_otp.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: 'email=' + encodeURIComponent(email) + '&otp=' + encodeURIComponent(otp)
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === 'verified') {
+            alert("Email Verified Successfully!");
+            document.getElementById('email_verified').value = "1";
+        } else {
+            alert("Invalid or Expired OTP!");
+        }
+    });
+};
+</script>
 
 <?php include 'includes/footer.php'; ?>

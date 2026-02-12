@@ -17,9 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $active = isset($_POST['active']) ? 1 : 0;
         
         // Validate form data
-        if (empty($title)) {
-            set_admin_alert('Title is required.', 'danger');
-        } else {
+        
             try {
                 // Handle image upload
                 $image_path = '';
@@ -106,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } catch (PDOException $e) {
                 set_admin_alert('An error occurred: ' . $e->getMessage(), 'danger');
             }
-        }
+        
     } elseif (isset($_POST['delete_slide'])) {
         // Delete slide
         $slide_id = isset($_POST['slide_id']) ? (int)$_POST['slide_id'] : 0;
@@ -191,8 +189,8 @@ include '../includes/header.php';
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="title" name="title" value="<?php echo $slide ? $slide['title'] : ''; ?>" required>
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" name="title" value="<?php echo $slide ? $slide['title'] : ''; ?>" >
                         </div>
                         
                         <div class="mb-3">

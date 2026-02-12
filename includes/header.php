@@ -163,8 +163,7 @@ require_once 'includes/functions.php';
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary text-white ms-2 px-4 btn-contact-cta btn-rect"
-                                style="border-radius: 4px !important;"
+                            <a class="nav-link btn btn-primary text-white ms-2 px-4 btn-contact-cta"
                                 href="<?php echo SITE_URL; ?>/about.php#contact">Contact Us</a>
                         </li>
                     </ul>

@@ -125,6 +125,32 @@ require_once 'includes/header.php';
     </div>
 </section>
 
+<!-- CSR Gallery Section -->
+<section class="section-padding bg-light" style="padding: 80px 0;">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold">Our Impact in Action</h2>
+            <p class="text-muted">Glimpses of our recent CSR initiatives and educational support</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover; max-height: 400px;" alt="CSR Activity 1">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_3.png" class="img-fluid w-100 h-100" style="object-fit: cover; max-height: 400px;" alt="CSR Activity 3">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_4.png" class="img-fluid w-100 h-100" style="object-fit: cover; max-height: 400px;" alt="CSR Activity 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- For Companies & Non-Profits Split Section -->
 <section class="section-padding" style="padding: 80px 0;">
     <div class="container">
@@ -146,7 +172,7 @@ require_once 'includes/header.php';
                 </ul>
                 <div class="d-block">
                     <a href="<?php echo SITE_URL; ?>/about.php#contact"
-                        class="btn btn-outline-primary px-4 rounded-pill">Become a Partner</a>
+                        class="btn btn-outline-primary px-4">Become a Partner</a>
                 </div>
             </div>
 
@@ -166,7 +192,7 @@ require_once 'includes/header.php';
                 </ul>
                 <div class="d-block">
                     <a href="<?php echo SITE_URL; ?>/about.php#contact"
-                        class="btn btn-outline-success px-4 rounded-pill">Join Our Network</a>
+                        class="btn btn-outline-success px-4">Join Our Network</a>
                 </div>
             </div>
         </div>
@@ -179,7 +205,7 @@ require_once 'includes/header.php';
         <h2 class="fw-bold mb-3">Ready to Make an Impact?</h2>
         <p class="lead mb-4 text-white-50">Join hands with Flione IT to revolutionize education through technology.</p>
         <a href="<?php echo SITE_URL; ?>/about.php#contact"
-            class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg">Contact Us Today</a>
+            class="btn btn-primary btn-lg px-5 shadow-lg">Contact Us Today</a>
     </div>
 </section>
 

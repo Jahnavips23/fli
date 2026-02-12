@@ -36,7 +36,7 @@
                                         <div class="g-recaptcha" data-sitekey="<?php echo RECAPTCHA_SITE_KEY; ?>"></div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary w-100">Subscribe Now</button>
+                                        <button type="submit" class="btn btn-primary w-100 btn-rect">Subscribe Now</button>
                                     </div>
                                 </form>
                             </div>

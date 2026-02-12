@@ -274,15 +274,44 @@ include 'includes/header.php';
         
         <div class="row mt-5">
             <?php if (!empty($services)): ?>
+                <?php 
+                // Define images for specific indices
+                $interactive_images = [
+                    0 => 'science_lab.jpg',
+                    1 => 'autotronic_lab.jpg',
+                    2 => '3d_printing_lab.jpg',
+                    3 => 'computer_lab.jpg',
+                    4 => 'robotics_lab.jpg',
+                    5 => 'computer_lab_setup.jpg'
+                ];
+                ?>
                 <?php foreach ($services as $index => $service): ?>
                     <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="<?php echo $index * 100; ?>">
-                        <div class="service-card h-100">
-                            <div class="service-icon">
-                                <i class="<?php echo $service['icon']; ?>"></i>
+                        <?php if (array_key_exists($index, $interactive_images)): ?>
+                            <!-- Special styling for interactive cards -->
+                            <div class="interactive-card">
+                                <img src="<?php echo SITE_URL; ?>/assets/images/services/<?php echo $interactive_images[$index]; ?>"
+                                    alt="<?php echo $service['title']; ?>" class="card-bg-img">
+                                <div class="card-overlay"></div>
+                                <div class="card-content">
+                                    <div class="card-icon mb-2">
+                                        <i class="<?php echo $service['icon']; ?>"></i>
+                                    </div>
+                                    <h4><?php echo $service['title']; ?></h4>
+                                    <p><?php echo $service['description']; ?></p>
+                                    <span class="read-more-btn" onclick="toggleCard(this)">Read More</span>
+                                </div>
                             </div>
-                            <h4 class="service-title"><?php echo $service['title']; ?></h4>
-                            <p class="service-description"><?php echo $service['description']; ?></p>
-                        </div>
+                        <?php else: ?>
+                            <!-- Standard styling for other cards -->
+                            <div class="service-card h-100">
+                                <div class="service-icon">
+                                    <i class="<?php echo $service['icon']; ?>"></i>
+                                </div>
+                                <h4 class="service-title"><?php echo $service['title']; ?></h4>
+                                <p class="service-description"><?php echo $service['description']; ?></p>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>
@@ -292,6 +321,19 @@ include 'includes/header.php';
                     </div>
                 </div>
             <?php endif; ?>
+        </div>
+        
+        <script>
+        function toggleCard(btn) {
+            const card = btn.closest('.interactive-card');
+            card.classList.toggle('expanded');
+            if (card.classList.contains('expanded')) {
+                btn.textContent = 'Read Less';
+            } else {
+                btn.textContent = 'Read More';
+            }
+        }
+        </script>
         </div>
     </div>
 </section>
