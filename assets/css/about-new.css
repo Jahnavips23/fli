@@ -1117,31 +1117,29 @@
     padding: 0;
 }
 
-.team-carousel-container {
-    overflow: visible;
-    display: flex;
-    justify-content: center;
+/* TEAM CAROUSEL STYLES (SWIPER) */
+.team-carousel-wrapper {
     padding: 20px 0;
-    flex-wrap: wrap;
+    overflow: visible;
 }
 
-/* Scrollbar hiding no longer needed but harmless */
-.team-carousel-container::-webkit-scrollbar {
-    display: none;
-}
-
-.team-carousel-track {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+.swiper.teamSwiper {
     width: 100%;
+    padding: 20px 0 50px;
+    overflow: hidden;
+    /* Hide overflow for clean loop */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    height: auto;
 }
 
 .team-card-wrapper {
-    flex: 0 0 auto;
-    width: 350px;
-    padding: 15px;
+    width: 100%;
+    max-width: 350px;
+    /* Ensure consistent width */
     transition: all 0.5s ease;
 }
 
@@ -1151,6 +1149,40 @@
     box-shadow: none;
     text-align: center;
     transition: all 0.5s ease;
+    height: 100%;
+}
+
+/* Custom Navigation Button */
+.swiper-button-next-custom {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    color: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next-custom:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .swiper-button-next-custom {
+        display: none;
+        /* Hide nav button on smaller screens */
+    }
 }
 
 /* Header Part: Image and Name */
@@ -1160,8 +1192,8 @@
 }
 
 .team-image-circle {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin: 0 auto 20px;
     position: relative;
@@ -1200,7 +1232,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
+    /* Reduced gap */
     opacity: 0;
     transition: all 0.3s ease;
     border-radius: 50%;
@@ -1211,15 +1244,21 @@
 }
 
 .team-social-overlay .social-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 32px;
+    /* Reduced size */
+    height: 32px;
+    /* Reduced size */
+    min-width: 32px;
+    min-height: 32px;
+    padding: 0;
+    border-radius: 50% !important;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    /* Reduced font size */
 
     /* Default State: White with Blue Icon */
     background: #fff;
@@ -1322,8 +1361,8 @@
     }
 
     .team-image-circle {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     .team-bio-box {

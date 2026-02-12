@@ -755,19 +755,16 @@ $testimonials = get_testimonials(3);
                 <img src="<?php echo SITE_URL; ?>/assets/images/clients/jnana-deepthi.jpg" alt="Jnana Deepthi English School Client" class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/client-2.png" alt="Client" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/vivek_international.jpg" alt="Vivek International Public School" class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/client-3.png" alt="Client" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/martin_luther.jpg" alt="Martin Luther School" class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/client-4.png" alt="Client" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/phoenix_english.jpg" alt="Phoenix English Medium School" class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/client-5.png" alt="Client" class="img-fluid">
-            </div>
-            <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/client-6.png" alt="Client" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/royal_public.jpg" alt="Royal Public School" class="img-fluid">
             </div>
         </div>
 

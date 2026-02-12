@@ -143,6 +143,10 @@ a:hover {
     border-radius: 4px !important;
 }
 
+.btn-contact-cta {
+    border-radius: 4px !important;
+}
+
 /* ===== HEADER ===== */
 .top-bar {
     font-size: 0.9rem;

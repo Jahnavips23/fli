@@ -30,7 +30,7 @@ require_once 'includes/header.php';
                 <h2 class="fw-bold mb-4">Driving Social Change Through Technology</h2>
                 <p class="lead text-primary mb-3">Commitment to Impact and Innovation</p>
                 <p>Corporate Social Responsibility (CSR) is more than just a mandate; it is an opportunity to make a
-                    lasting impact on society. At Flione IT, we believe in the transformative power of technology to
+                    lasting impact on society. At Flione Innovation and Technology, we believe in the transformative power of technology to
                     uplift communities and improve educational outcomes.</p>
                 <p>We facilitate partnerships that channel CSR funds into meaningful technology-driven education
                     initiatives. By bridging the gap between corporate resources and educational needs, we help create
@@ -103,21 +103,21 @@ require_once 'includes/header.php';
             <div class="col-md-4 mb-4 mb-md-0" data-aos="zoom-in">
                 <div class="p-3">
                     <i class="fas fa-bridge fa-3x mb-3 text-white-50"></i>
-                    <h4 class="fw-bold">Connecting</h4>
-                    <p class="small text-white-50">Linking corporate funding with genuine educational needs.</p>
+                    <h4 class="fw-bold">CONNECTING</h4>
+                    <p class="small text-white-50">Connect  corporate funding with genuine educational needs.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="100">
                 <div class="p-3">
                     <i class="fas fa-lightbulb fa-3x mb-3 text-white-50"></i>
-                    <h4 class="fw-bold">Innovating</h4>
-                    <p class="small text-white-50">Bringing cutting-edge technology to underprivileged communities.</p>
+                    <h4 class="fw-bold">INNOVATING</h4>
+                    <p class="small text-white-50">Innovating cutting-edge technology to serve communities.</p>
                 </div>
             </div>
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                 <div class="p-3">
                     <i class="fas fa-rocket fa-3x mb-3 text-white-50"></i>
-                    <h4 class="fw-bold">Empowering</h4>
+                    <h4 class="fw-bold">EMPOWERING</h4>
                     <p class="small text-white-50">Enabling future generations through digital literacy.</p>
                 </div>
             </div>

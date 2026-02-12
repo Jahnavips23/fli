@@ -159,12 +159,11 @@ require_once 'includes/functions.php';
                         <li class="nav-item">
                             <a class="nav-link <?php echo is_active_page('track') ? 'active' : ''; ?>"
                                 href="<?php echo SITE_URL; ?>/track.php">
-                                <i class="fas fa-search-location me-1"></i> Track/Create
+                                <i class="fas fa-search-location me-1"></i> Track
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary text-white ms-2 px-4 btn-contact-cta btn-rect"
-                                style="border-radius: 4px !important;"
+                            <a class="nav-link btn btn-primary text-white ms-2 px-4 btn-contact-cta"
                                 href="<?php echo SITE_URL; ?>/about.php#contact">Contact Us</a>
                         </li>
                     </ul>
