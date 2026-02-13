@@ -101,10 +101,14 @@ require_once 'includes/functions.php';
                             class="fas fa-phone me-2"></i><?php echo get_setting('contact_phone'); ?></span>
                 </div>
                 <div class="col-md-6 text-end">
-                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/flionetech" class="text-white me-2" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/flionetech" class="text-white me-2" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/flione-tech/" class="text-white me-2" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/flionetech?igsh=NXppZnBjMTI4OTF1" class="text-white"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>

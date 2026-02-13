@@ -41,18 +41,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'joshithakv@gmail.com';  // 🔴 CHANGE THIS
+        $mail->Username = 'support@flioneit.com';  // 🔴 CHANGE THIS
         $mail->Password = 'giyb ecpz wihb esrh';    // 🔴 CHANGE THIS
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
         $mail->SMTPOptions = [
-    'ssl' => [
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true,
-    ],
-];
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true,
+            ],
+        ];
 
 
         $mail->setFrom('joshithakv@gmail.com', 'FLIONE Support');

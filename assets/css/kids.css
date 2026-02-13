@@ -244,4 +244,32 @@
     .gallery-item img {
         height: 150px;
     }
+
+    /* Fix buttons in intro section for mobile */
+    .kids-intro-content .d-flex {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+    }
+
+    .kids-intro-content .btn {
+        width: 100% !important;
+        white-space: normal !important;
+        font-size: 0.9rem !important;
+        padding: 0.5rem 1.5rem !important;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .kids-intro-content .d-flex {
+        flex-wrap: wrap !important;
+    }
+
+    .kids-intro-content .btn {
+        white-space: normal !important;
+        font-size: 0.95rem !important;
+        padding: 0.5rem 1.75rem !important;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
 }

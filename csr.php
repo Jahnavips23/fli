@@ -23,14 +23,15 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                <img src="<?php echo SITE_URL; ?>/assets/images/features/educational-exp.jpg" alt="CSR Education"
-                    class="img-fluid rounded shadow-lg">
+                <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr-cycle.png" alt="CSR Cycle"
+                    class="img-fluid rounded shadow-lg d-block mx-auto" style="max-height: 350px; width: auto;">
             </div>
             <div class="col-lg-6" data-aos="fade-left">
                 <h2 class="fw-bold mb-4">Driving Social Change Through Technology</h2>
                 <p class="lead text-primary mb-3">Commitment to Impact and Innovation</p>
                 <p>Corporate Social Responsibility (CSR) is more than just a mandate; it is an opportunity to make a
-                    lasting impact on society. At Flione Innovation and Technology, we believe in the transformative power of technology to
+                    lasting impact on society. At Flione Innovation and Technology, we believe in the transformative
+                    power of technology to
                     uplift communities and improve educational outcomes.</p>
                 <p>We facilitate partnerships that channel CSR funds into meaningful technology-driven education
                     initiatives. By bridging the gap between corporate resources and educational needs, we help create
@@ -104,7 +105,7 @@ require_once 'includes/header.php';
                 <div class="p-3">
                     <i class="fas fa-bridge fa-3x mb-3 text-white-50"></i>
                     <h4 class="fw-bold">CONNECTING</h4>
-                    <p class="small text-white-50">Connect  corporate funding with genuine educational needs.</p>
+                    <p class="small text-white-50">Connect corporate funding with genuine educational needs.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="100">
@@ -135,78 +136,84 @@ require_once 'includes/header.php';
         <div class="row g-4">
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover; max-height: 400px;" alt="CSR Activity 1">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_1.jpg" class="img-fluid w-100 h-100"
+                        style="object-fit: cover; max-height: 400px;" alt="CSR Activity 1">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_3.png" class="img-fluid w-100 h-100" style="object-fit: cover; max-height: 400px;" alt="CSR Activity 3">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_3.png" class="img-fluid w-100 h-100"
+                        style="object-fit: cover; max-height: 400px;" alt="CSR Activity 3">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_4.png" class="img-fluid w-100 h-100" style="object-fit: cover; max-height: 400px;" alt="CSR Activity 4">
+                    <img src="<?php echo SITE_URL; ?>/assets/images/csr/csr_4.png" class="img-fluid w-100 h-100"
+                        style="object-fit: cover; max-height: 400px;" alt="CSR Activity 4">
                 </div>
             </div>
         </div>
     </div>
 
-<!-- For Companies & Non-Profits Split Section -->
-<section class="section-padding" style="padding: 80px 0;">
-    <div class="container">
-        <div class="row g-0 overflow-hidden rounded shadow-lg">
-            <!-- For Companies -->
-            <div class="col-md-6 bg-white p-5 text-center text-md-start border-end" data-aos="fade-right">
-                <span class="badge bg-primary mb-3">For Corporate Partners</span>
-                <h3 class="fw-bold mb-3">Partner With Us</h3>
-                <p class="text-muted mb-4">
-                    Direct your CSR funds towards high-impact technology education projects.
-                    Enhance your brand value and contribute to community development while ensuring transparent
-                    utilization of funds.
-                </p>
-                <ul class="list-unstyled text-start mb-4 mx-auto mx-md-0 d-inline-block">
-                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Verified Educational Projects
-                    </li>
-                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Impact Reporting</li>
-                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Brand Recognition</li>
-                </ul>
-                <div class="d-block">
-                    <a href="<?php echo SITE_URL; ?>/about.php#contact"
-                        class="btn btn-outline-primary px-4">Become a Partner</a>
+    <!-- For Companies & Non-Profits Split Section -->
+    <section class="section-padding" style="padding: 80px 0;">
+        <div class="container">
+            <div class="row g-0 overflow-hidden rounded shadow-lg">
+                <!-- For Companies -->
+                <div class="col-md-6 bg-white p-5 text-center text-md-start border-end" data-aos="fade-right">
+                    <span class="badge bg-primary mb-3">For Corporate Partners</span>
+                    <h3 class="fw-bold mb-3">Partner With Us</h3>
+                    <p class="text-muted mb-4">
+                        Direct your CSR funds towards high-impact technology education projects.
+                        Enhance your brand value and contribute to community development while ensuring transparent
+                        utilization of funds.
+                    </p>
+                    <ul class="list-unstyled text-start mb-4 mx-auto mx-md-0 d-inline-block">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Verified Educational
+                            Projects
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Impact Reporting</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Brand Recognition</li>
+                    </ul>
+                    <div class="d-block">
+                        <a href="<?php echo SITE_URL; ?>/about.php#contact" class="btn btn-outline-primary px-4">Become
+                            a Partner</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- For Non-Profits -->
-            <div class="col-md-6 bg-light p-5 text-center text-md-start" data-aos="fade-left">
-                <span class="badge bg-success mb-3">For NGOs & Institutions</span>
-                <h3 class="fw-bold mb-3">Collaborate With Us</h3>
-                <p class="text-muted mb-4">
-                    Are you an NGO or educational institution looking for technical support?
-                    Partner with us to receive aid for digital classrooms, computer labs, and training programs.
-                </p>
-                <ul class="list-unstyled text-start mb-4 mx-auto mx-md-0 d-inline-block">
-                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Technology Infrastructure
-                    </li>
-                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Skill Training Modules</li>
-                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Sustainable Support</li>
-                </ul>
-                <div class="d-block">
-                    <a href="<?php echo SITE_URL; ?>/about.php#contact"
-                        class="btn btn-outline-success px-4">Join Our Network</a>
+                <!-- For Non-Profits -->
+                <div class="col-md-6 bg-light p-5 text-center text-md-start" data-aos="fade-left">
+                    <span class="badge bg-success mb-3">For NGOs & Institutions</span>
+                    <h3 class="fw-bold mb-3">Collaborate With Us</h3>
+                    <p class="text-muted mb-4">
+                        Are you an NGO or educational institution looking for technical support?
+                        Partner with us to receive aid for digital classrooms, computer labs, and training programs.
+                    </p>
+                    <ul class="list-unstyled text-start mb-4 mx-auto mx-md-0 d-inline-block">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Technology Infrastructure
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Skill Training Modules
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Sustainable Support</li>
+                    </ul>
+                    <div class="d-block">
+                        <a href="<?php echo SITE_URL; ?>/about.php#contact" class="btn btn-outline-success px-4">Join
+                            Our Network</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Final Call to Action -->
-<section class="bg-dark text-white text-center py-5">
-    <div class="container" data-aos="fade-up">
-        <h2 class="fw-bold mb-3">Ready to Make an Impact?</h2>
-        <p class="lead mb-4 text-white-50">Join hands with Flione IT to revolutionize education through technology.</p>
-        <a href="<?php echo SITE_URL; ?>/about.php#contact"
-            class="btn btn-primary btn-lg px-5 shadow-lg">Contact Us Today</a>
-    </div>
-</section>
+    <!-- Final Call to Action -->
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="fw-bold mb-3">Ready to Make an Impact?</h2>
+            <p class="lead mb-4 text-white-50">Join hands with Flione IT to revolutionize education through technology.
+            </p>
+            <a href="<?php echo SITE_URL; ?>/about.php#contact" class="btn btn-primary btn-lg px-5 shadow-lg">Contact Us
+                Today</a>
+        </div>
+    </section>
 
-<?php include 'includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>
