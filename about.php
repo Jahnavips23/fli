@@ -208,9 +208,12 @@ $testimonials = get_testimonials();
                                             alt="Srinidhi Chilakamarri K">
                                         <div class="team-social-overlay">
                                             <a href="https://www.linkedin.com/in/srinidhi-chilakamarri-k-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                                class="social-icon" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href="https://www.instagram.com/srinidhichilakamarrik?igsh=MXJuc2I5azJhZXBmZA==" class="social-icon" target="blank"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://mail.google.com/mail/?view=cm&to=reach.flione@gmail.com" class="social-icon" target="blank"><i class="fas fa-envelope"></i></a>
+                                                class="social-icon" target="blank"><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://www.instagram.com/srinidhichilakamarrik?igsh=MXJuc2I5azJhZXBmZA=="
+                                                class="social-icon" target="blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://mail.google.com/mail/?view=cm&to=reach.flione@gmail.com"
+                                                class="social-icon" target="blank"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
                                     <h4 class="mt-3 mb-1">Srinidhi Chilakamarri K</h4>
@@ -218,7 +221,8 @@ $testimonials = get_testimonials();
                                 </div>
                                 <div class="team-bio-box">
                                     <p>Srinidhi leads the company’s mission to transform education through purposeful
-                                        technology. With experience in school ERP systems, RFID automation, robotics labs,
+                                        technology. With experience in school ERP systems, RFID automation, robotics
+                                        labs,
                                         and digital learning solutions.</p>
                                 </div>
                             </div>
@@ -231,20 +235,24 @@ $testimonials = get_testimonials();
                             <div class="team-card">
                                 <div class="team-header">
                                     <div class="team-image-circle">
-                                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png" alt="Suchitha">
+                                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png"
+                                            alt="Suchitha">
                                         <div class="team-social-overlay">
-                                            <a href="https://www.linkedin.com/in/suchitha-hs/" class="social-icon" target="_blank"><i
-                                                    class="fab fa-linkedin-in"></i></a>
-                                            <a href="https://www.instagram.com/suchitha27?igsh=dDZ3enAwYzJwYXc5" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://mail.google.com/mail/?view=cm&to=parisuchi27@gmail.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+                                            <a href="https://www.linkedin.com/in/suchitha-hs/" class="social-icon"
+                                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://www.instagram.com/suchitha27?igsh=dDZ3enAwYzJwYXc5"
+                                                class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://mail.google.com/mail/?view=cm&to=parisuchi27@gmail.com"
+                                                class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
                                     <h4 class="mt-3 mb-1">Suchitha</h4>
                                     <p class="team-role">Project Manager</p>
                                 </div>
                                 <div class="team-bio-box">
-                                    <p>Leads the development team while designing, developing, and maintaining scalable web
-                                        applications using PHP, Python, and SQL. Oversees backend architecture.</p>
+                                    <p>Leads the development team in designing, building, and maintaining scalable web
+                                        applications while overseeing backend architecture to ensure performance,
+                                        reliability, and scalability.</p>
                                 </div>
                             </div>
                         </div>
@@ -258,9 +266,13 @@ $testimonials = get_testimonials();
                                     <div class="team-image-circle">
                                         <img src="<?php echo SITE_URL; ?>/assets/images/team/sumant.png" alt="Sumant">
                                         <div class="team-social-overlay">
-                                            <a href="https://www.linkedin.com/in/sumant-bhat-b57867293?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="social-icon" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href="https://www.instagram.com/sumantbhat_?igsh=aGp6bHR4NXppemlp" class="social-icon" target="blank"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://mail.google.com/mail/?view=cm&to=sumantsbhatta@gmail.com" class="social-icon" target="blank"><i class="fas fa-envelope"></i></a>
+                                            <a href="https://www.linkedin.com/in/sumant-bhat-b57867293?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                                                class="social-icon" target="blank"><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://www.instagram.com/sumantbhat_?igsh=aGp6bHR4NXppemlp"
+                                                class="social-icon" target="blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://mail.google.com/mail/?view=cm&to=sumantsbhatta@gmail.com"
+                                                class="social-icon" target="blank"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
                                     <h4 class="mt-3 mb-1">Sumant</h4>
@@ -285,9 +297,12 @@ $testimonials = get_testimonials();
                                             alt="Srinidhi Chilakamarri K">
                                         <div class="team-social-overlay">
                                             <a href="https://www.linkedin.com/in/srinidhi-chilakamarri-k-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                                class="social-icon" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href="https://www.instagram.com/srinidhichilakamarrik?igsh=MXJuc2I5azJhZXBmZA==" class="social-icon" target="blank"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://mail.google.com/mail/?view=cm&to=reach.flione@gmail.com" class="social-icon" target="blank"><i class="fas fa-envelope"></i></a>
+                                                class="social-icon" target="blank"><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://www.instagram.com/srinidhichilakamarrik?igsh=MXJuc2I5azJhZXBmZA=="
+                                                class="social-icon" target="blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://mail.google.com/mail/?view=cm&to=reach.flione@gmail.com"
+                                                class="social-icon" target="blank"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
                                     <h4 class="mt-3 mb-1">Srinidhi Chilakamarri K</h4>
@@ -295,7 +310,8 @@ $testimonials = get_testimonials();
                                 </div>
                                 <div class="team-bio-box">
                                     <p>Srinidhi leads the company’s mission to transform education through purposeful
-                                        technology. With experience in school ERP systems, RFID automation, robotics labs,
+                                        technology. With experience in school ERP systems, RFID automation, robotics
+                                        labs,
                                         and digital learning solutions.</p>
                                 </div>
                             </div>
@@ -308,20 +324,24 @@ $testimonials = get_testimonials();
                             <div class="team-card">
                                 <div class="team-header">
                                     <div class="team-image-circle">
-                                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png" alt="Suchitha">
+                                        <img src="<?php echo SITE_URL; ?>/assets/images/team/person1.png"
+                                            alt="Suchitha">
                                         <div class="team-social-overlay">
-                                            <a href="https://www.linkedin.com/in/suchitha-hs/" class="social-icon" target="_blank"><i
-                                                    class="fab fa-linkedin-in"></i></a>
-                                            <a href="https://www.instagram.com/suchitha27?igsh=dDZ3enAwYzJwYXc5" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://mail.google.com/mail/?view=cm&to=parisuchi27@gmail.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+                                            <a href="https://www.linkedin.com/in/suchitha-hs/" class="social-icon"
+                                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://www.instagram.com/suchitha27?igsh=dDZ3enAwYzJwYXc5"
+                                                class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://mail.google.com/mail/?view=cm&to=parisuchi27@gmail.com"
+                                                class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
                                     <h4 class="mt-3 mb-1">Suchitha</h4>
                                     <p class="team-role">Project Manager</p>
                                 </div>
                                 <div class="team-bio-box">
-                                    <p>Leads the development team while designing, developing, and maintaining scalable web
-                                        applications using PHP, Python, and SQL. Oversees backend architecture.</p>
+                                    <p>Leads the development team in designing, building, and maintaining scalable web
+                                        applications while overseeing backend architecture to ensure performance,
+                                        reliability, and scalability.</p>
                                 </div>
                             </div>
                         </div>
@@ -335,9 +355,13 @@ $testimonials = get_testimonials();
                                     <div class="team-image-circle">
                                         <img src="<?php echo SITE_URL; ?>/assets/images/team/sumant.png" alt="Sumant">
                                         <div class="team-social-overlay">
-                                            <a href="https://www.linkedin.com/in/sumant-bhat-b57867293?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="social-icon" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href="https://www.instagram.com/sumantbhat_?igsh=aGp6bHR4NXppemlp" class="social-icon" target="blank"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://mail.google.com/mail/?view=cm&to=sumantsbhatta@gmail.com" class="social-icon" target="blank"><i class="fas fa-envelope"></i></a>
+                                            <a href="https://www.linkedin.com/in/sumant-bhat-b57867293?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                                                class="social-icon" target="blank"><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://www.instagram.com/sumantbhat_?igsh=aGp6bHR4NXppemlp"
+                                                class="social-icon" target="blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://mail.google.com/mail/?view=cm&to=sumantsbhatta@gmail.com"
+                                                class="social-icon" target="blank"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
                                     <h4 class="mt-3 mb-1">Sumant</h4>

@@ -245,12 +245,14 @@ try {
                                 </div>
                                 <h4><?php echo $service['title']; ?></h4>
                                 <p><?php echo $service['description']; ?></p>
-                                <?php if (!empty($service['image'])): ?>
-                                    <div class="service-image mt-3">
-                                        <img src="<?php echo SITE_URL . '/' . $service['image']; ?>"
-                                            alt="<?php echo $service['title']; ?>" class="img-fluid rounded">
-                                    </div>
-                                <?php endif; ?>
+                                <?php /* Service image removed as per user request to keep homepage text-only
+                                   <?php if (!empty($service['image'])): ?>
+                                       <div class="service-image mt-3">
+                                           <img src="<?php echo SITE_URL . '/' . $service['image']; ?>"
+                                               alt="<?php echo $service['title']; ?>" class="img-fluid rounded">
+                                       </div>
+                                   <?php endif; ?>
+                                   */ ?>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -373,7 +375,8 @@ try {
         </script>
 
         <div class="text-center mt-4" data-aos="fade-up">
-            <a href="<?php echo SITE_URL; ?>/about.php#services" class="btn btn-outline-primary btn-rect">Learn More About Our
+            <a href="<?php echo SITE_URL; ?>/about.php#services" class="btn btn-outline-primary btn-rect">Learn More
+                About Our
                 Services</a>
         </div>
     </div>
@@ -749,22 +752,28 @@ $testimonials = get_testimonials(3);
         </div>
         <div class="partners-scroll-container" id="partnersContainer">
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/ksvp_logo.jpg" alt="KSVP Client" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/ksvp_logo.jpg" alt="KSVP Client"
+                    class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/jnana-deepthi.jpg" alt="Jnana Deepthi English School Client" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/jnana-deepthi.jpg"
+                    alt="Jnana Deepthi English School Client" class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/vivek_international.jpg" alt="Vivek International Public School" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/vivek_international.jpg"
+                    alt="Vivek International Public School" class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/martin_luther.jpg" alt="Martin Luther School" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/martin_luther.jpg" alt="Martin Luther School"
+                    class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/phoenix_english.jpg" alt="Phoenix English Medium School" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/phoenix_english.jpg"
+                    alt="Phoenix English Medium School" class="img-fluid">
             </div>
             <div class="partner-item">
-                <img src="<?php echo SITE_URL; ?>/assets/images/clients/royal_public.jpg" alt="Royal Public School" class="img-fluid">
+                <img src="<?php echo SITE_URL; ?>/assets/images/clients/royal_public.jpg" alt="Royal Public School"
+                    class="img-fluid">
             </div>
         </div>
 

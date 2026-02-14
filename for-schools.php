@@ -274,23 +274,13 @@ include 'includes/header.php';
         
         <div class="row mt-5">
             <?php if (!empty($services)): ?>
-                <?php 
-                // Define images for specific indices
-                $interactive_images = [
-                    0 => 'science_lab.jpg',
-                    1 => 'autotronic_lab.jpg',
-                    2 => '3d_printing_lab.jpg',
-                    3 => 'computer_lab.jpg',
-                    4 => 'robotics_lab.jpg',
-                    5 => 'computer_lab_setup.jpg'
-                ];
-                ?>
+                <?php /* Images are now fetched from database */ ?>
                 <?php foreach ($services as $index => $service): ?>
                     <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="<?php echo $index * 100; ?>">
-                        <?php if (array_key_exists($index, $interactive_images)): ?>
+                        <?php if (!empty($service['image'])): ?>
                             <!-- Special styling for interactive cards -->
                             <div class="interactive-card">
-                                <img src="<?php echo SITE_URL; ?>/assets/images/services/<?php echo $interactive_images[$index]; ?>"
+                                <img src="<?php echo SITE_URL . '/' . $service['image']; ?>"
                                     alt="<?php echo $service['title']; ?>" class="card-bg-img">
                                 <div class="card-overlay"></div>
                                 <div class="card-content">
